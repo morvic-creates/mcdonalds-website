@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A bright, playful McDonald's-inspired menu and burger guide." />
+  <title>Golden Bites | McDonald's Menu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="ticker"><span>🍟 FREE FRIES FRIDAY</span> Spend $15+ and treat yourself to a side of crispy happiness! <button id="tickerClose" aria-label="Close announcement">×</button></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Golden Bites home"><span class="arches">M</span><span>golden<br><b>bites</b></span></a>
+    <nav><a href="#menu">Menu</a><a href="#facts">Burger facts</a><a href="#visit">Find us</a></nav>
+    <button class="order-button" id="orderButton">Order now <span>→</span></button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy"><p class="eyebrow">GOOD MOOD. GREAT FOOD.</p><h1>Big flavor.<br><em>Big smiles.</em></h1><p class="hero-text">Your unofficial guide to golden fries, legendary burgers, and the little menu moments that make a meal feel like a celebration.</p><div class="hero-actions"><a class="primary-button" href="#menu">Explore the menu <span>↓</span></a><span class="rating">★★★★★ <small>4.9 from hungry humans</small></span></div></div>
+      <div class="hero-art"><div class="burst">YUM!<br><small>100%</small></div><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1000&q=85" alt="Juicy cheeseburger with fries" /><div class="sticker">made for<br><b>burger<br>lovers</b> 🍔</div></div>
+    </section>
+
+    <section class="fun-strip"><div>🍔 <b>BURGER BREAK</b><span> Take a bite out of your day</span></div><div>✨ <b>HAPPY ENERGY</b><span> Served with every order</span></div><div>🍦 <b>SWEET FINISH</b><span> Dessert is always a good idea</span></div></section>
+
+    <section class="section" id="menu"><div class="section-heading"><div><p class="eyebrow">PICK YOUR HAPPY</p><h2>Fan favorites</h2></div><p>Tap a card to learn a tiny menu secret.</p></div><div class="menu-grid">
+      <article class="menu-card yellow" data-fact="The Big Mac sauce is a creamy, tangy secret with a cult following."><img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=700&q=80" alt="Classic cheeseburger"><div><span class="price">$5.99</span><h3>Big Mac-ish</h3><p>Two patties, special sauce, and maximum stack energy.</p><button class="learn">Quick bite <span>↗</span></button></div></article>
+      <article class="menu-card red" data-fact="The perfect fry has a crisp outside, fluffy center, and a little salt sparkle."><img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=700&q=80" alt="Golden french fries"><div><span class="price">$2.49</span><h3>Golden fries</h3><p>Thin, crispy, salty little legends. No sharing required.</p><button class="learn">Quick bite <span>↗</span></button></div></article>
+      <article class="menu-card blue" data-fact="A thick shake is best enjoyed with a straw and absolutely zero regrets."><img src="https://images.unsplash.com/photo-1579954115545-a95591f28bfc?auto=format&fit=crop&w=700&q=80" alt="Chocolate milkshake"><div><span class="price">$4.29</span><h3>Shake it up</h3><p>Cool, creamy, and ready to turn an ordinary day sweet.</p><button class="learn">Quick bite <span>↗</span></button></div></article>
+    </div><div class="fact-popover" id="factPopover" role="status"></div></section>
+
+    <section class="facts section" id="facts"><div class="facts-image"><img src="https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?auto=format&fit=crop&w=900&q=85" alt="Cheeseburger on a plate"><span class="floating-note">FUN<br>FACT<br>ZONE!</span></div><div class="facts-copy"><p class="eyebrow">BET YOU DIDN'T KNOW</p><h2>Burger trivia<br>with extra <em>cheese.</em></h2><div class="fact-row"><strong>01</strong><p><b>Build it your way.</b><br>Extra pickles? No pickles? The best burger is the one that makes you grin.</p></div><div class="fact-row"><strong>02</strong><p><b>Fries have a fan club.</b><br>That golden, crispy side is the ultimate burger wingman.</p></div><div class="fact-row"><strong>03</strong><p><b>Sweet endings count.</b><br>Apple pies, cookies, and shakes: every meal deserves a grand finale.</p></div></div></section>
+
+    <section class="visit" id="visit"><div><p class="eyebrow">COME SAY HI</p><h2>Meet us at the<br><em>golden arches.</em></h2><p class="address">📍 123 Sunshine Avenue<br><span>Happyville, CA 90210</span></p><p class="hours">Open daily · 6:00 AM – 11:00 PM</p><button class="primary-button" id="mapButton">Get directions <span>↗</span></button></div><div class="map-card"><div class="map-pin">M</div><div class="road road-one"></div><div class="road road-two"></div><div class="map-label">Golden Bites<br><small>you are here!</small></div></div></section>
+  </main>
+  <footer><a class="brand" href="#top"><span class="arches">M</span><span>golden<br><b>bites</b></span></a><p>Made with fries, fun, and a little bit of ketchup. © 2025 Golden Bites.</p><div><a href="#menu">Menu</a><a href="#visit">Contact</a></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
